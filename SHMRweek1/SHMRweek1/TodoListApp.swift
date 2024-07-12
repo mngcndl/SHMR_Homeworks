@@ -7,11 +7,16 @@
 
 import Foundation
 import SwiftUI
+import CocoaLumberjack
 
 
 @main
 struct TodoListItem: App {
     @StateObject var listViewModel: ListViewModel = ListViewModel()
+    
+    init() {
+        LoggerConfig.configure()
+    }
     
     var body: some Scene {
         WindowGroup {
