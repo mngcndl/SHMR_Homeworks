@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import CocoaLumberjack
+import CocoaLumberjackSwift
 
 struct DetailView: View {
     @EnvironmentObject var listViewModel: ListViewModel
